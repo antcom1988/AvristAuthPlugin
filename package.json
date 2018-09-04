@@ -1,0 +1,17 @@
+{
+  "name": "id.code.avrist.plugin",
+  "version": "0.0.1",
+  "description": "",
+  "cordova": {
+    "id": "id.code.avrist.plugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Mochamad Taufik Hidayat",
+  "license": "ISC"
+}

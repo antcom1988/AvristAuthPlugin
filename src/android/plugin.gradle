@@ -1,0 +1,9 @@
+repositories {
+    jcenter()
+    maven { url 'https://dl.bintray.com/tyastonotaufiq/avrist' }
+}
+
+dependencies {
+  compile ('com.google.code.gson:gson:2.8.5')
+  compile ('id.code.avrist.authenticationmodule:authenticationmodule:0.0.14')
+}

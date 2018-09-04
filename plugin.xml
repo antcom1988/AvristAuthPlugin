@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="id.code.avrist.plugin" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>AvristAuth</name>
+    <js-module name="AvristAuth" src="www/AvristAuth.js">
+        <clobbers target="AvristAuth" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="AvristAuth">
+                <param name="android-package" value="id.code.avrist.plugin.AvristAuth" />
+            </feature>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <activity android:label="New Activity" android:name="id.code.avrist.plugin.NewActivity"></activity>
+        </config-file>
+        <config-file parent="/resources" target="./res/values/strings.xml">
+            <string name="facebook_app_id">2094109440844768</string>
+            <string name="fb_login_protocol_scheme">fb2094109440844768</string>
+            <string name="server_client_id">8064172740-855gdggtfl79it72harutn8s789kqp7f.apps.googleusercontent.com</string>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <source-file src="src/android/AvristAuth.java" target-dir="src/id/code/avrist/plugin" />
+        <source-file src="src/android/NewActivity.java" target-dir="src/id/code/avrist/plugin" />
+        <source-file src="src/android/Globals.java" target-dir="src/id/code/avrist/plugin" />
+        <source-file src="src/android/activity_new.xml" target-dir="res/layout"/>
+
+        <framework src="src/android/plugin.gradle" custom="true" type="gradleReference"/>
+    </platform>
+</plugin>
