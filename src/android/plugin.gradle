@@ -5,5 +5,5 @@ repositories {
 
 dependencies {
   compile ('com.google.code.gson:gson:2.8.5')
-  compile ('id.code.avrist.authenticationmodule:authenticationmodule:0.0.14')
+  compile ('id.code.avrist.authenticationmodule:authenticationmodule:0.0.15')
 }
